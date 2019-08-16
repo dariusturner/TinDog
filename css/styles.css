@@ -1,17 +1,31 @@
 
+body {
+  font-family: "Montserrat";
+}
+
+/* Navigation Bar Section */
+
 .navbar-brand {
-  font-size: 2rem;
+  font-family: "Ubuntu";
+  font-size: 2.2rem;
+}
+
+.nav-item {
+  padding: 0 18px;
 }
 
 .nav-link {
-  font-size: 1.2rem;
-  margin: 0 25px;
+  font-size: 1rem;
+  font-weight: 100;
 }
+
+/* Title Section */
 
 #title {
   background-color: #ff4c68;
-  max-height: 90vh;
+  max-height: 92vh;
   overflow: hidden;
+  color:#ffffff
 }
 
 #title .row {
@@ -24,18 +38,64 @@
 
 h1 {
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
   font-weight: 900;
   line-height: 1.5;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 #title .btn {
+  font-size: 1rem;
   margin: 0 5px;
 }
 
-#title img {
+#title .title-image {
   transform: rotate(22deg);
-  width: 75%;
+  width: 70%;
+}
+
+/* Features Section */
+
+#features {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+.icn {
+  color: #ef8172;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icn:hover {
+  color: #ff4c68;
+}
+
+#features .title {
+  font-family: "montserrat-bold";
+  font-size: 2rem;
+}
+
+#features .description {
+  color: #8f8f8f;
+  padding: 0 25%;
+}
+
+/* Queries Section */
+@media screen and (max-width: 1024px) {
+  #title {
+    max-height: none;
+  }
+  #title .title-image {
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 }
