@@ -29,7 +29,7 @@ h2 {
 
 #title {
   background-color: #ff4c68;
-  max-height: 93vh;
+  max-height: 78vh;
   overflow: hidden;
   color:#ffffff;
   padding-bottom: 5%;
@@ -57,9 +57,10 @@ h1 {
   margin: 0 5px;
 }
 
-#title .title-image {
+.title-image {
+  margin-top: -8%;
   transform: rotate(22deg);
-  width: 70%;
+  width: 65%;
 }
 
 /* Features Section */
@@ -92,22 +93,6 @@ h1 {
   padding: 0 25%;
 }
 
-/* Queries Section */
-@media screen and (max-width: 1024px) {
-  #title {
-    max-height: none;
-  }
-  #title .title-image {
-    margin-left: 25%;
-    margin-top: 10%;
-    width: 40%;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-}
-
 /* Testimonial Section */
 
 #testimonials {
@@ -123,6 +108,10 @@ h1 {
   width: 10%;
 }
 
+.carousel-item {
+  padding: 5% 7%;
+}
+
 #press {
   background-color: #ff4c68;
   padding-bottom: 3%;
@@ -132,4 +121,34 @@ h1 {
 .press-logo {
   margin: 20px 20px 50px;
   width: 15%;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+/* Queries Section */
+@media screen and (max-width: 1028px) {
+  #title {
+    max-height: none;
+    text-align: center;
+  }
+  .title-image {
+    margin-top: 10%;
+    position: static;
+    transform: rotate(0);
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 }
