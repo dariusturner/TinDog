@@ -9,6 +9,13 @@ h2 {
   line-height: 1.5;
 }
 
+h3 {
+  font-family: "Montserrat-Black";
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+
 /* Navigation Bar Section */
 
 .navbar-brand {
@@ -134,6 +141,40 @@ h1 {
   padding: 3% 2%;
 }
 
+/* CTA Section */
+
+#cta {
+  color: white;
+  background-color: #ff4c68;
+  padding: 5% 25%;
+  text-align: center;
+}
+
+.download {
+  margin: 5% 20px 0;
+
+}
+
+.download.btn-outline-dark {
+  background-color: white;
+}
+
+.download.btn-outline-dark:hover {
+  background-color: #343a40;
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 5% 7%;
+  text-align: center;
+}
+
+#footer .icn {
+  color: #343a40;
+  font-size: 16px;
+  margin: 10px;
+}
 
 /* Queries Section */
 @media screen and (max-width: 1028px) {
