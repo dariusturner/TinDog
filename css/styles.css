@@ -1,19 +1,40 @@
 
 body {
   font-family: "Montserrat";
+  text-align: center;
 }
 
-h2 {
-  font-family: "Montserrat-Bold";
-  font-size: 3rem;
+h1 {
+  color: white;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-h3 {
-  font-family: "Montserrat-Black";
+h2, h3 {
+  font-family: "Montserrat-Bold";
   font-size: 3rem;
   font-weight: bolder;
   line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 5% 7%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #ffffff;
+}
+
+.white-section {
+  background-color: #ffffff;
 }
 
 /* Navigation Bar Section */
@@ -35,28 +56,18 @@ h3 {
 /* Title Section */
 
 #title {
-  background-color: #ff4c68;
   max-height: 78vh;
   overflow: hidden;
-  color:#ffffff;
   padding-bottom: 5%;
+  text-align: left;
 }
 
 #title .row {
   margin-top: 8%;
 }
 
-.container-fluid {
+#title .container-fluid {
   padding: 3% 15%;
-}
-
-h1 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 900;
-  line-height: 1.5;
-  margin-bottom: 20px;
 }
 
 #title .btn {
@@ -75,14 +86,11 @@ h1 {
 #features {
   margin-top: 8%;
   margin-bottom: 8%;
-  padding: 5% 7%;
-  text-align: center;
 }
 
 .icn {
   color: #ef8172;
   font-size: 4rem;
-  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -91,7 +99,7 @@ h1 {
 }
 
 #features .title {
-  font-family: "montserrat-bold";
+  font-family: "Montserrat-Bold";
   font-size: 2rem;
 }
 
@@ -102,27 +110,14 @@ h1 {
 
 /* Testimonial Section */
 
-#testimonials {
-  background-color: #ff4c68;
-  color: #ffffff;
-  padding: 5% 7%;
-  text-align: center;
+#testimonials, #press {
+  background-color: #ef8172;
 }
 
 .testimonial-image {
   border-radius: 100%;
   margin: 20px;
   width: 10%;
-}
-
-.carousel-item {
-  padding: 5% 7%;
-}
-
-#press {
-  background-color: #ff4c68;
-  padding-bottom: 3%;
-  text-align: center;
 }
 
 .press-logo {
@@ -134,20 +129,24 @@ h1 {
 
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 
 .pricing-column {
   padding: 3% 2%;
 }
 
+.pricing-title {
+  font-size: 1.5rem;
+}
+
+.price-text {
+  font-size: 2.5rem;
+}
+
 /* CTA Section */
 
-#cta {
-  color: white;
-  background-color: #ff4c68;
+#cta .container-fluid {
   padding: 5% 25%;
-  text-align: center;
 }
 
 .download {
@@ -165,19 +164,22 @@ h1 {
 
 /* Footer Section */
 
-#footer {
-  padding: 5% 7%;
-  text-align: center;
-}
-
 #footer .icn {
   color: #343a40;
   font-size: 16px;
   margin: 10px;
 }
 
+#footer .icn:hover {
+  color: #ef8172;
+}
+
 /* Queries Section */
 @media screen and (max-width: 1028px) {
+  h1 {
+    font-size: 3rem;
+  }
+
   #title {
     max-height: none;
     text-align: center;
@@ -187,9 +189,5 @@ h1 {
     position: static;
     transform: rotate(0);
     width: 50%;
-  }
-
-  h1 {
-    font-size: 3rem;
   }
 }
