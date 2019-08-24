@@ -1,7 +1,7 @@
 # TinDog
 A mock website to showcase my Bootstrap skills
 
-- Find playdates for you puppies!
+- Download our app TinDog to find playdates for your puppies!
 
 ### What I Used In this Project
 
